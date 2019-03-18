@@ -9,45 +9,28 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
 /*
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  background-color: #333;
+.cover-outer-container{
+    height: 100vh;
+    /* background-color: #333; */
 }
-
-body {
+.cover-container {
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 42em;
-}
-
-
 /*
  * Header
  */
+
 .masthead {
-  margin-bottom: 2rem;
+  background-color: #333;
+  height: 70px;
 }
 
 .masthead-brand {
@@ -86,11 +69,18 @@ body {
 }
 
 
+
 /*
  * Cover
  */
 .cover {
   padding: 0 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -118,4 +108,64 @@ body {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+  }
+  .container {
+    max-width: 960px;
+    height: 100vh;
+  }
+  .skillList{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skillList li{
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .circle{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-color: rgba(211, 80, 70, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  .circle::after{
+    content: "";
+    display: block;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .p90, .p180, .p270, .p360{
+    background-color: #DB2B39;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .p180{
+    top: 50%;
+  }
+  .p270{
+    top: 50%;
+    right: 50%;
+  }
+  .p360{
+    right: 50%;
   }

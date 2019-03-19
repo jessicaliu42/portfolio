@@ -31,6 +31,9 @@ a:hover {
 .masthead {
   background-color: #333;
   height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .masthead-brand {
@@ -115,7 +118,7 @@ a:hover {
   }
   .container {
     max-width: 960px;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .skillList{
     display: flex;

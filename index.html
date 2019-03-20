@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Jessica's Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".nav" data-offset="50">
     <body class="text-center">
         <header class="masthead p-3">
             <div class="inner">
@@ -25,24 +25,25 @@
     <div id="top" class="cover-outer-container">
     <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
       <main id="top" role="main" class="inner cover">
+          <p>Hello, My name is</p>
         <h1 class="cover-heading">Jessica Liu</h1>
         <p class="lead">Front-End Engineer</p>
         <p class="lead">
-          <a href="#info" class="btn btn-secondary">View my work</a>
+          <a href="#info" class="btn infobtn btn-primary">View my work</a>
         </p>
       </main>
     </div>
     </div>
     <div id="info" class="container">
-        <br />
         <h1>About</h1>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="mr-md-3 pt-3 px-3 px-md-5 overflow-hidden">
-            who am I
-            <button type="button" class="btn btn-primary">Resume</button>
+        <div class="mr-md-3 pt-3 px-3 overflow-hidden">
+            <img style="width: 100%;" src="assets/me.jpg" />
+            <p style="text-align: left; margin-top: 20px;">Versatile Front-end Engineer with 3+ years of experience developing digital interactive features, landing pages and managing websites’ SEO in the magazine publishing industry. Specialize in Javascript, JQuery and CSS.</p>
+            <a href="./20190319Resume.pdf" class="btn btn-primary" download>Resume</a>
         </div>
-        <div class="mr-md-3 pt-3 px-3 px-md-5 overflow-hidden">
-            <h5>Front-End</h5>
+        <div class="mr-md-3 pt-3 px-3 overflow-hidden">
+            <h5 class="headingLeft">Front-End</h5>
             <ul class="skillList">
                 <li>
                     <div class="circle">
@@ -56,6 +57,7 @@
                         <div class="p90"></div>
                         <div class="p180"></div>
                         <div class="p270"></div>
+                        <div class="p360"></div>
                     </div>
                     HTML
                 </li>
@@ -68,13 +70,12 @@
                     Javascript
                 </li>
             </ul>
-            <h5>Framework</h5>
+            <h5 class="headingLeft">Framework</h5>
             <ul class="skillList">
                 <li>
                     <div class="circle">
                         <div class="p90"></div>
                         <div class="p180"></div>
-                        <div class="p270"></div>
                     </div>
                     Bootstrap</li>
                 <li>
@@ -87,19 +88,16 @@
                 <li>
                     <div class="circle">
                         <div class="p90"></div>
-                        <div class="p180"></div>
-                        <div class="p270"></div>
                     </div>
                     React JS
                 </li>
             </ul>
-            <h5>Back-End</h5>
+            <h5 class="headingLeft">Back-End</h5>
             <ul class="skillList">
                 <li>
                     <div class="circle">
                         <div class="p90"></div>
                         <div class="p180"></div>
-                        <div class="p270"></div>
                     </div>
                     C#
                 </li>
@@ -107,19 +105,17 @@
                     <div class="circle">
                         <div class="p90"></div>
                         <div class="p180"></div>
-                        <div class="p270"></div>
                     </div>
                     PHP</li>
                 <li>
                     <div class="circle">
                         <div class="p90"></div>
                         <div class="p180"></div>
-                        <div class="p270"></div>
                     </div>
                     MySQL
                 </li>
             </ul>
-            <h5>Design</h5>
+            <h5 class="headingLeft">Design</h5>
             <ul class="skillList">
                 <li>
                     <div class="circle">
@@ -139,34 +135,46 @@
                         <div class="circle">
                                 <div class="p90"></div>
                                 <div class="p180"></div>
-                                <div class="p270"></div>
                             </div>
                     Sketch</li>
+                <li>                   
+            </ul>  
+            <div style="width: 50%;float: left;">
+                <h5 class="headingLeft">Programming</h5>
+                <ul class="skillList" style="padding-left: 30px;">
+                    <li>
+                        <div class="circle">
+                            <div class="p90"></div>
+                            <div class="p180"></div>
+                        </div>
+                        C</li>
+                </ul>
+            </div> 
+            <div>
+                <h5 class="headingLeft">Tools</h5>
+                <ul class="skillList">
                 <li>
                     <div class="circle">
-                        <div class="p90"></div>
-                        <div class="p180"></div>
-                        <div class="p270"></div>
-                    </div>
-                    After Effect</li>
-            </ul>    
-             <h5>Programming</h5>
-             <p>C</p>
-             <h5>Tools</h5>
-             <p>Git</p>
+                                <div class="p90"></div>
+                                <div class="p180"></div>
+                            </div>
+                    Git</li>
+                </ul>
+            </div>
         </div>
     </div>          
     </div>
+    <div>
     <div id="work" class="container">
             <h1>Project</h1>
             <br />
-            <h4>2019-2018</h4>
+            <h4 class="headingLeft">2019-2018</h4>
             <div class="row">
                 <div class="col-sm">
                     <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
                         <svg class="bd-placeholder-img card-img-top" width="100%" height="160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">React.js/Node.js</p>
                         </div>
                     </div>
                    
@@ -175,7 +183,7 @@
                         <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work002018">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2018/00nowater/00.png" />
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">CSS/HTML/Javascript</p>
                             </div>
                         </div>
                     </div>
@@ -183,7 +191,7 @@
                         <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work012018">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2018/01election/01.png" />
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">CSS/HTML/Javascript</p>
                             </div>
                         </div>
                     </div>
@@ -192,13 +200,10 @@
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators2019" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                         <li data-target="#carouselIndicators2019" data-slide-to="0" class="active"></li>
@@ -225,8 +230,10 @@
                                         <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <button type="button" class="btn btn-primary">View Site</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,13 +242,10 @@
             <div class="modal fade" id="work002018" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
                             <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -272,8 +276,10 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                     </div>
+                                    <div class="card-info-text">
                                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="https://topic.cw.com.tw/2018watershed/story.html" target="_blank" class="btn btn-primary">View Site</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,13 +287,10 @@
             <div class="modal fade" id="work012018" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
                                 <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         <div id="carouselIndicators012018" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                   <li data-target="#carouselIndicators012018" data-slide-to="0" class="active"></li>
@@ -322,20 +325,22 @@
                                                   <span class="sr-only">Next</span>
                                                 </a>
                                         </div>
+                                        <div class="card-info-text">
                                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="https://topic.cw.com.tw/politicaldynasty2018/" target="_blank" class="btn btn-primary">View Site</a>
+                                    </div>
                                     </div>
                             </div>
                         </div>
             </div>
             <br />
-             <h4>2017</h4>
+             <h4 class="headingLeft">2017</h4>
              <div class="row">
                     <div class="col-sm">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work002017">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/00bendo/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript<br/>C#/MySQL/Facebook API</p>
                                 </div>
                             </div>
                     </div>
@@ -343,7 +348,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work012017">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/01southasia/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript</p>
                                     </div>
                                 </div>
                     </div>
@@ -351,7 +356,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work022017">
                                     <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/02outsource/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript/D3.js</p>
                                     </div>
                             </div>
                     </div>
@@ -362,7 +367,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work032017">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/03electric/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript/Leaflet.js</p>
                                 </div>
                             </div>
                     </div>
@@ -370,7 +375,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;"  data-toggle="modal" data-target="#work042017">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/04women/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript/Canvas</p>
                                     </div>
                                 </div>
                     </div>
@@ -378,7 +383,7 @@
                         <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work052017">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2017/05longtermcare/00.png" />
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">CSS/HTML/Javascript/D3.js</p>
                                 </div>
                             </div>
                 </div>
@@ -387,13 +392,10 @@
             <div class="modal fade" id="work002017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
                             <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                    </button>
                                     <div id="carouselIndicators002017" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselIndicators002017" data-slide-to="0" class="active"></li>
@@ -428,8 +430,10 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                     </div>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://topic.cw.com.tw/anniversary/2017/quiz.html" target="_blank" class="btn btn-primary">View Site</a>
+                                    <div class="card-info-text">
+                                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="https://topic.cw.com.tw/anniversary/2017/quiz.html" target="_blank" class="btn btn-primary">View Site</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -437,13 +441,10 @@
             <div class="modal fade" id="work012017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
                                 <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         <div id="carouselIndicators012017" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                   <li data-target="#carouselIndicators012017" data-slide-to="0" class="active"></li>
@@ -474,8 +475,10 @@
                                                   <span class="sr-only">Next</span>
                                                 </a>
                                         </div>
+                                        <div class="card-info-text">
                                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="https://topic.cw.com.tw/2017Asean/" target="_blank" class="btn btn-primary">View Site</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -483,13 +486,10 @@
             <div class="modal fade" id="work022017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
                             <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     <div id="carouselIndicators022017" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselIndicators022017" data-slide-to="0" class="active"></li>
@@ -520,8 +520,10 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                     </div>
+                                    <div class="card-info-text">
                                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="https://topic.cw.com.tw/underpaid/" target="_blank" class="btn btn-primary">View Site</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -529,13 +531,10 @@
             <div class="modal fade" id="work032017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
                             <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     <div id="carouselIndicators032017" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselIndicators032017" data-slide-to="0" class="active"></li>
@@ -582,8 +581,10 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                     </div>
+                                    <div class="card-info-text">
                                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="https://topic.cw.com.tw/2017energy/" class="btn btn-primary">View Site</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -591,13 +592,10 @@
             <div class="modal fade" id="work042017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators042017" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators042017" data-slide-to="0" class="active"></li>
@@ -632,8 +630,10 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="http://topic.cheers.com.tw/issue/2017/workingwomen/" target="_blank" class="btn btn-primary">View Site</a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -641,13 +641,10 @@
             <div class="modal fade" id="work052017" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators052017" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators052017" data-slide-to="0" class="active"></li>
@@ -676,20 +673,22 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="https://topic.cw.com.tw/2018longtermcare/" target="_blank" class="btn btn-primary">View Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <br />
-            <h4>2016</h4>
+            <h4 class="headingLeft">2016</h4>
             <div class="row">
                     <div class="col-sm">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work002016">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2016/00farm/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">CSS/HTML/Javascript<br />leaflet.js</p>
                                 </div>
                             </div>
                     </div>
@@ -697,7 +696,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work012016">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2016/01digitalBritish/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">HTML/CSS/Javascript</p>
                                     </div>
                             </div>
                      </div>
@@ -705,7 +704,7 @@
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work022016">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2016/02southasia/01.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">HTML/CSS/Javascript</p>
                                     </div>
                             </div>
                      </div>
@@ -714,13 +713,10 @@
              <div class="modal fade" id="work002016" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators002016" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators002016" data-slide-to="0" class="active"></li>
@@ -758,8 +754,10 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="http://topic.cw.com.tw/2016landfactory/" target="_blank" class="btn btn-primary">View Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -767,13 +765,10 @@
             <div class="modal fade" id="work012016" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators012016" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators012016" data-slide-to="0" class="active"></li>
@@ -804,8 +799,10 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="https://topic.cw.com.tw/TechNationUK/index.html" target="_blank" class="btn btn-primary">View Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -813,13 +810,10 @@
             <div class="modal fade" id="work022016" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators022016" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators022016" data-slide-to="0" class="active"></li>
@@ -858,20 +852,22 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="http://topic.cw.com.tw/2016Asean/city.html" target="_blank" class="btn btn-primary">View Site</a>
-                        </div>
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>
             <br />
-             <h4>2014</h4>
+             <h4 class="headingLeft">2014</h4>
              <div class="row">
                     <div class="col-sm">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#work002014">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="assets/2014/00.png" />
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">HTML/CSS/Javascript</p>
                                     <!-- <button type="button" class="btn btn-primary" ">Learn More</button> -->
                                     </div>
                             </div>
@@ -881,13 +877,10 @@
              <div class="modal fade" id="work002014" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
                         <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 <div id="carouselIndicators002014" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselIndicators002014" data-slide-to="0" class="active"></li>
@@ -926,15 +919,18 @@
                                           <span class="sr-only">Next</span>
                                         </a>
                                 </div>
+                                <div class="card-info-text">
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <button type="button" class="btn btn-primary">View Site</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
-    <footer>
-            <div class="inner">
+    </div>
+    <footer class="mastfoot">
+            <div>
                     Copyright © 2019 | Coded By Jessica Liu.
                     Last Updated: 03/18/2019
             </div>
@@ -943,8 +939,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>

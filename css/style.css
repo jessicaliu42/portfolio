@@ -300,7 +300,9 @@ a:hover {
   font-size: 3rem;
   margin-bottom: 0rem;
 }
-
+.headingYear {
+  text-align: left;
+}
 @media only screen and (max-width : 768px) {
   /* Styles */
     /* Styles */
@@ -328,7 +330,7 @@ a:hover {
       text-align: center;
       text-align: -webkit-center;
     }
-    .headingLeft {
+    .headingYear {
       text-align: center;
     }
   }

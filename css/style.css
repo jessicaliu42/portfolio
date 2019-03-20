@@ -237,13 +237,15 @@ a:hover {
 .btn-primary{
   color: #333333;
   font-weight: 600;
-  background-color: transparent;
+  background-color: #7cf8dc;
+ 
   border-color: #7cf8dc;
   transition: 0.3s;
 }
 
 .btn-primary:hover{
   color: #fff;
+  background-color: transparent;
   background-color: #7cf8dc;
   border-color: #7cf8dc;
 }
@@ -265,4 +267,14 @@ a:hover {
 
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+}
+.heading-about{
+  border-bottom: 5px solid #000000;
+    width: 12%;
+    text-align: center;
+}
+.heading-project{
+  border-bottom: 5px solid #000000;
+    width: 14%;
+    text-align: center;
 }

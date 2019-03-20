@@ -294,3 +294,45 @@ a:hover {
   font-size: 2rem;
   margin: 10px;
 }
+
+.para-hello{
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width : 768px) {
+  /* Styles */
+    /* Styles */
+    .cover {
+     position: absolute;
+     top: 15%;
+     left: 0px;
+     -ms-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+   }
+   .cover-heading {
+     font-size: 6rem;
+   }
+    .para-hello{
+      font-size: 1.8rem;
+      margin-bottom: 0rem;
+    }
+    .heading-about {
+      width: 50%;
+    }
+    .heading-project {
+      width: 70%;
+    }
+    .col-sm{
+      text-align: center;
+      text-align: -webkit-center;
+    }
+    .headingLeft {
+      text-align: center;
+    }
+  }
+/* 
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+} */

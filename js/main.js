@@ -27,180 +27,181 @@ $(document).ready(function () {
                   const offset = circumference - percent / 100 * circumference;
                   circle1.style.strokeDashoffset = offset;
                 }
-                setProgress1(15);
-
+                setProgress1(85);
+            
                 var circle2 = document.getElementById("circle2");
                 var radius = circle2.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle2.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle2.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress2(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle2.style.strokeDashoffset = offset;
                 }
-                setProgress2(10);
-
+                setProgress2(90);
+            
                 var circle3 = document.getElementById("circle3");
                 var radius = circle3.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle3.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle3.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress3(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle3.style.strokeDashoffset = offset;
                 }
-                setProgress3(30);
-
+                setProgress3(70);
+            
                 var circle4 = document.getElementById("circle4");
                 var radius = circle4.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle4.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle4.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress4(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle4.style.strokeDashoffset = offset;
                 }
                 setProgress4(50);
-
+            
                 var circle5 = document.getElementById("circle5");
                 var radius = circle5.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle5.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle5.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress5(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle5.style.strokeDashoffset = offset;
                 }
-                setProgress5(20);
-
+                setProgress5(80);
+            
                 var circle6 = document.getElementById("circle6");
                 var radius = circle6.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle6.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle6.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress6(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle6.style.strokeDashoffset = offset;
                 }
-                setProgress6(70);
-
+                setProgress6(30);
+            
                 var circle7 = document.getElementById("circle7");
                 var radius = circle7.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle7.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle7.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress7(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle7.style.strokeDashoffset = offset;
                 }
-                setProgress7(70);
-
+                setProgress7(30);
+            
                 var circle8 = document.getElementById("circle8");
                 var radius = circle8.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle8.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle8.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress8(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle8.style.strokeDashoffset = offset;
                 }
-                setProgress8(70);
-
+                setProgress8(30);
+            
                 var circle9 = document.getElementById("circle9");
                 var radius = circle9.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle9.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle9.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress9(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle9.style.strokeDashoffset = offset;
                 }
-                setProgress9(70);
-
+                setProgress9(30);
+            
                 var circle10 = document.getElementById("circle10");
                 var radius = circle10.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle10.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle10.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress10(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle10.style.strokeDashoffset = offset;
                 }
-                setProgress10(30);
-
+                setProgress10(70);
+            
                 var circle11 = document.getElementById("circle11");
                 var radius = circle11.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle11.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle11.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress11(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle11.style.strokeDashoffset = offset;
                 }
                 setProgress11(50);
-
+            
                 var circle12 = document.getElementById("circle12");
                 var radius = circle12.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle12.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle12.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress12(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle12.style.strokeDashoffset = offset;
                 }
-                setProgress12(60);
-
+                setProgress12(40);
+            
                 var circle13 = document.getElementById("circle13");
                 var radius = circle13.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle13.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle13.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress13(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle13.style.strokeDashoffset = offset;
                 }
-                setProgress13(60);
-
+                setProgress13(40);
+            
                 var circle14 = document.getElementById("circle14");
                 var radius = circle14.r.baseVal.value;
                 var circumference = radius * 2 * Math.PI;
-
+            
                 circle14.style.strokeDasharray = `${circumference} ${circumference}`;
                 circle14.style.strokeDashoffset = `${circumference}`;
-
+            
                 function setProgress14(percent) {
                   const offset = circumference - percent / 100 * circumference;
                   circle14.style.strokeDashoffset = offset;
                 }
-                setProgress14(60);
+                setProgress14(40);   
             }
-            
         }); 
     });
+
+  
 
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
